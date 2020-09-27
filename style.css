@@ -1,0 +1,73 @@
+html{
+    background: #018DED url(https://images.pexels.com/photos/3829442/pexels-photo-3829442.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    min-height: 100vh;
+    font-size: 2rem;
+    text-align: center;
+    text-justify: center;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+h1{
+    margin: 0;
+}
+.container{
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+.clock{
+    margin-top: 0;
+    position: relative;
+    margin: 50px auto;
+    border: 13px solid black;
+    border-radius: 50%;
+    width: 24rem;
+    height: 24rem;
+    padding: 2rem;
+    box-shadow: 0 0 0 4px rgba(0,0,0,0.1), inset 0 0 0 3px #EFEFEF, inset 0 0 10px black, 0 0 10px rgba(0,0,0,0.2);
+
+}
+#sec{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: blue;
+    width: 47%;
+    height: 10px;
+    transform-origin: 0%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+#min{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    width: 39%;
+    height: 10px;
+    transform-origin: 0%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+#hr{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: green;
+    width: 30%;
+    height: 10px;
+    transform-origin: 0%;
+    transform: rotate(270deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
